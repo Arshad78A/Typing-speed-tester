@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TypeSpeed - Typing Test</title>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="app">
+<header><div class="logo"><span>type</span>speed</div>
+<div class="controls">
+<div class="pill" id="modePill"><button data-mode="words" class="active">words</button><button data-mode="quote">quote</button></div>
+<div class="pill" id="timePill"><button data-time="15">15</button><button data-time="30" class="active">30</button><button data-time="60">60</button></div>
+</div></header>
+<main>
+<div class="stats"><div class="stat"><span>wpm</span><b id="wpm">--</b></div><div class="stat"><span>acc</span><b id="acc">--</b></div><div class="stat" id="timeStat"><span>time</span><b id="time">30s</b></div></div>
+<div class="words-wrap" id="wordsWrap"><div id="words"></div><div class="focus-msg">Click here or start typing</div></div>
+<button class="restart" id="restartBtn">↻ restart <small>tab+enter</small></button>
+</main>
+<div class="result-overlay" id="resultOverlay">
+<div class="result-card"><p style="font-size:11px;letter-spacing:.22em;color:#6b6b78">RESULT</p>
+<h1><span id="finalWpm">0</span> <em>WPM</em></h1><p id="resultMeta" style="color:#6b6b78;font-size:13px;margin-bottom:10px"></p>
+<div class="grid"><div><small>accuracy</small><b id="rAcc">0%</b></div><div><small>raw wpm</small><b id="rRaw">0</b></div><div><small>correct</small><b id="rCor">0</b></div><div><small>incorrect</small><b id="rInc">0</b></div></div>
+<div class="actions"><button id="againBtn" class="primary">↻ Restart</button><button id="newBtn" class="secondary">New Test</button></div>
+</div></div>
+</div>
+<input id="hiddenInput" autocomplete="off" spellcheck="false">
+<script src="script.js"></script>
+</body>
+</html>
