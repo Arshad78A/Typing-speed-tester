@@ -2,9 +2,7 @@
 
 A beautiful, fast and distraction-free typing test inspired by Monkeytype. Built with **pure HTML, CSS & Vanilla JavaScript** - no frameworks, no dependencies.
 
-![preview](preview.png)
 
-**Live Demo:** https://your-username.github.io/typespeed-monkeytype-clone/
 
 ---
 
